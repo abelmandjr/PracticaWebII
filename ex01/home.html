@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu CV</title>
+    <style>
+        *{
+           
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu{
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        menu a{
+            text-decoration: none;
+            font-size: 16pt;
+            padding: 5px 20px;
+            border: 1px solid blueviolet;
+            border-radius: 20px;
+            color: blueviolet;
+            transition: 0.5s all;
+            &:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+        }
+
+        .resumo{
+            width: 50%;
+            text-align: justify;
+            font-size: 14pt;
+        }
+
+        .rdp{
+            background-color: #1b263b;
+            color: #fff;    
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+
+            & input{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                margin-top: 5px;
+            }
+
+            & button{
+                padding: 10px 30px;
+                border: 1px solid blueviolet;
+                background-color: transparent;
+                color: #fff;
+                border-radius: 10px;
+                transition: 0.3s all;
+                &:hover{
+                    background-color: blueviolet;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <menu class="menu">
+        <a href="formacao.html">Formacao</a>
+        <a href="experiencia.html">experiencia</a>
+    </menu>
+
+    <h1>Resumo Profissional</h1>
+    <p class="resumo">
+        Profissional dedicado com mais de 5 anos de experiência em [sua área de atuação], destacando-se pela capacidade de liderança, resolução de problemas e excelência no atendimento ao cliente. Habilidade comprovada em [alguma habilidade específica], com histórico de sucesso em [realização notável]. Apaixonado por inovação e desenvolvimento contínuo, sempre buscando aprimorar conhecimentos e habilidades.
+    </p>
+    <footer class="rdp">
+        <a href="#">Abel Junior</a>
+        Telefone: 850173222 | E-mail: abelmandjr@email.com | LinkedIn: linkedin.com/in/abeljunior
+        <form action="#">
+            <label for="inome">Nome</label><br>
+            <input type="text" id="inome"><br><br>
+
+            <label for="iemail">Email</label><br>
+            <input type="email" name="" id="iemail"><br><br>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+</body>
+</html>

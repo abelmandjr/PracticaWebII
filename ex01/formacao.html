@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formacao</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .menu{
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        menu a{
+            text-decoration: none;
+            font-size: 16pt;
+            padding: 5px 20px;
+            border: 1px solid blueviolet;
+            border-radius: 20px;
+            color: blueviolet;
+            transition: 0.5s all;
+            &:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+        }
+
+        .rdp{
+            background-color: #1b263b;
+            color: #fff;    
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+
+            & input{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                margin-top: 5px;
+            }
+
+            & button{
+                padding: 10px 30px;
+                border: 1px solid blueviolet;
+                background-color: transparent;
+                color: #fff;
+                border-radius: 10px;
+                transition: 0.3s all;
+                &:hover{
+                    background-color: blueviolet;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <menu class="menu" style="margin-top: 20px;">
+        <a href="home.html">Home</a>
+        <a href="experiencia.html">Experiência</a>
+    </menu>
+
+    <h1>Formação Acadêmica</h1>
+
+
+    <h2>Bacharelado em [Seu Curso]</h2>
+    <p>Universidade XYZ, Cidade, Estado</p>
+    <p>Conclusão: Dezembro de 2015</p>
+
+
+    <h2>Certificações</h2>
+    <ul>
+        <li>[Certificação Relevante] - [Instituição], [Ano]</li>
+        <li>[Outra Certificação Relevante] - [Instituição], [Ano]</li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <ul>
+        <li>[Habilidade Técnica 1]</li>
+        <li>[Habilidade Técnica 2]</li>
+        <li>[Habilidade Técnica 3]</li>
+        <li>Excelente comunicação e habilidades interpessoais</li>
+        <li>Liderança e gestão de equipes</li>
+        <li>Resolução de problemas e pensamento crítico</li>
+    </ul>
+
+    <h2>Idiomas</h2>
+    <ul>
+        <li>Português: Nativo</li>
+        <li>Inglês: Fluente</li>
+        <li>[Outro Idioma]: [Nível de Proficiência]</li>
+    </ul>
+
+    <h2>Atividades e Interesses</h2>
+    <ul>
+        <li>Voluntário em [Organização], participando de [atividades voluntárias].</li>
+        <li>Apaixonado por xadrez, com rating intermediário em várias categorias (Rápidas: 1160, Blitz: 1026, Bullet: 913).</li>
+        <li>Interesse em tecnologia, leitura e esportes ao ar livre.</li>
+    </ul>
+
+    <footer class="rdp">
+        <a href="#">Abel Junior</a>
+        Telefone: 850173222 | E-mail: abelmandjr@email.com | LinkedIn: linkedin.com/in/abeljunior
+        <form action="#">
+            <label for="inome">Nome</label><br>
+            <input type="text" id="inome"><br><br>
+
+            <label for="iemail">Email</label><br>
+            <input type="email" name="" id="iemail"><br><br>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+</body>
+</html>

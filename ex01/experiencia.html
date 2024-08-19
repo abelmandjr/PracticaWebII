@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .menu{
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        menu a{
+            text-decoration: none;
+            font-size: 16pt;
+            padding: 5px 20px;
+            border: 1px solid blueviolet;
+            border-radius: 20px;
+            color: blueviolet;
+            transition: 0.5s all;
+            &:hover{
+                background-color: blueviolet;
+                color: white;
+            }
+        }
+
+        .rdp{
+            background-color: #1b263b;
+            color: #fff;    
+            position: relative;
+            bottom: 0px;
+            width: 100%;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            gap: 20px;
+
+            & input{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                margin-top: 5px;
+            }
+
+            & button{
+                padding: 10px 30px;
+                border: 1px solid blueviolet;
+                background-color: transparent;
+                color: #fff;
+                border-radius: 10px;
+                transition: 0.3s all;
+                &:hover{
+                    background-color: blueviolet;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <menu class="menu" style="margin-top: 20px;">
+        <a href="home.html">Home</a>
+        <a href="formacao.html">Formacao</a>
+    </menu>
+
+    <h1>Experiência Profissional</h1>
+    <h2>Analista de [Sua Área]</h2>
+    <p>Empresa XYZ, Cidade, Estado</p>
+    <p>Março de 2019 - Presente</p>
+    <ul>
+        <li>Gerenciamento de projetos de [descreva os projetos], resultando em [resultado alcançado].</li>
+        <li>Desenvolvimento e implementação de [estratégia/tática], aumentando [indicador de sucesso] em X%.</li>
+        <li>Coordenação de equipes de até [número] colaboradores, promovendo um ambiente de trabalho colaborativo e produtivo.</li>
+    </ul>
+    <h2>Assistente de [Sua Área]</h2>
+    <p>Empresa ABC, Cidade, Estado</p>
+    <p>Janeiro de 2016 - Fevereiro de 2019</p>
+    <ul>
+        <li>Suporte na execução de [tarefas específicas], contribuindo para [resultado].</li>
+        <li>Análise e relatório de [dados/requisitos], auxiliando na tomada de decisões estratégicas.</li>
+        <li>Participação em treinamentos e workshops, aprimorando habilidades em [área específica].</li>
+    </ul>
+
+
+    <footer class="rdp">
+        <a href="#">Abel Junior</a>
+        Telefone: 850173222 | E-mail: abelmandjr@email.com | LinkedIn: linkedin.com/in/abeljunior
+        <form action="#">
+            <label for="inome">Nome</label><br>
+            <input type="text" id="inome"><br><br>
+
+            <label for="iemail">Email</label><br>
+            <input type="email" name="" id="iemail"><br><br>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+</body>
+</html>
